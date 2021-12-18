@@ -1,0 +1,17 @@
+<style>
+    .table td,
+    .table th {
+        vertical-align: middle;
+    }
+</style>
+<h2 style="color:crimson;"></h2>
+
+{{#if datosSesion.nombre }}
+    <div class="form-group">
+        <label for="texto">Bienvenido  </label><br><b  style="color:blue">{{datosSesion.nombre}} </b>
+        <a  href='/logout' class="btn btn-danger float-right" >Desloguearse</a>
+    </div>
+    <br>
+{{else}}
+    <h3 class="alert alert-danger">No se encontraron datos del usuario.</h1>
+{{/if}}
